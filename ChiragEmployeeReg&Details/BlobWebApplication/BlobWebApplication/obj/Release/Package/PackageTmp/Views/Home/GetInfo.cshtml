@@ -1,0 +1,32 @@
+﻿@model List<BlobWebApplication.Models.ChiragInfo>
+
+
+<h2>GetInfo</h2>
+<table border="1">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Number</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (BlobWebApplication.Models.ChiragInfo StudentObj in Model)
+        {
+            <tr>
+                <td>@StudentObj.FirstName</td>
+                <td>@StudentObj.LastName</td>
+                <td>@StudentObj.Email</td>
+                <td>@StudentObj.Number</td>
+                <td>
+                    <span>@Html.ActionLink("Edit", "Index", "Home", new { id = StudentObj.RowKey }, new { })</span>
+                    ||
+                    <span>@Html.ActionLink("Delete", "DeleteInfo", "Home", new { id = StudentObj.RowKey }, new { })</span>
+                </td>
+            </tr>
+        }
+            <tr>@Html.ActionLink("Check Your files", "Get", "Home")</tr>
+    </tbody>
+</table>  

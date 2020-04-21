@@ -1,0 +1,65 @@
+﻿@model IEnumerable<BlobWebApplication.Models.ChiragInfo>
+@{
+    ViewBag.Title = "Employee Details";
+}
+@if (TempData["SuccessMsg"] != null)
+{
+    <script>
+        alert("@TempData["SuccessMsg"].ToString()")
+    </script>
+}
+<h2>Employees</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayName("First Name")
+        </th>
+        <th>
+            @Html.DisplayName("Last Name")
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayName("Phone Number")
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayName("Resume")
+        </th>
+        <th>
+            @Html.DisplayName("Download")
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.PartitionKey)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RowKey)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Number)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                <a href="/Home/Download?name=@item.ResumeUrl.Split('/').Last()">@HttpUtility.UrlDecode(item.ResumeUrl.Split('/').Last().Split('.').First())</a>
+            </td>
+            <td>
+                <a href="/Home/Download?name=@item.ResumeUrl.Split('/').Last()">Download</a>
+            </td>
+        </tr>
+    }
+
+</table>

@@ -1,0 +1,36 @@
+﻿@model List<string>
+@{
+    ViewBag.Title = "Get";
+}
+
+<h2>Get</h2>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Picture</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (string SingleObj in Model)
+        {
+            <tr>
+                <td>
+                    <img src="@SingleObj" alt="@SingleObj"
+                         style="height:100px; width: auto;" />
+                </td>
+                <td>
+                    <span>
+                        @Html.ActionLink("Delete File", "Delete", "Home", new { uri = SingleObj }, new { })
+                    </span>
+                    <a href="/Home/Download?name=@SingleObj.Split('/').Last()">Download</a>
+
+                </td>
+            </tr>
+
+        }
+            <tr> @Html.ActionLink("Home", "Index", "Home")</tr>
+    </tbody>
+</table>
+
