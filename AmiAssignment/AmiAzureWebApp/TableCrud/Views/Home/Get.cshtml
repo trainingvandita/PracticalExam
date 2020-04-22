@@ -1,0 +1,55 @@
+﻿@model List<TableCrud.Models.Employee>
+@{
+    ViewBag.Title = "Get";
+}
+
+<p>
+    <button class="btn btn-default" style="margin-bottom:10px"><i class="glyphicon glyphicon-plus"></i>@Html.ActionLink("Add Employee", "Index", "Home")</button>
+</p>
+
+<table class="table table-bordered table-hover" width="100%">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Mobile Number</th>
+            <th>Address</th>
+            <th>Email</th>
+            <th>Resume</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (TableCrud.Models.Employee employee in Model)
+        {
+            <tr>
+                <td>@employee.FirstName</td>
+                <td>@employee.LastName</td>
+                <td>@employee.Mobile</td>
+                <td>@employee.Address</td>
+                <td>@employee.Email</td>
+                <td>
+                    @*<a href="@employee.Path">@employee.Path.Split('/').Last()</a>*@
+                    <button class=""><a href="/Home/Download?name=@employee.Path.Split('/').Last()">@employee.Path.Split('/').Last()</a></button>
+                </td>
+                <td>
+                    @if (employee.IsActive == false)
+                    {
+                        <text> <span style="color:red;">In Active</span> </text>
+                    }
+                    else
+                    {
+                        <text> <span style="color:green;">Active</span> </text>
+                    }
+                </td>
+                <td>
+                    <span>@Html.ActionLink("Edit", "Index", "Home", new { id = employee.RowKey }, new {@class = "glyphicon glyphicon-edit" })</span>
+                    ||
+                    <span>@Html.ActionLink("Delete", "Delete", "Home", new { id = employee.RowKey }, new { @class ="glyphicon glyphicon-erase "})</span>
+                </td>
+            </tr>
+
+        }
+    </tbody>
+</table>  

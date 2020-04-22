@@ -1,0 +1,44 @@
+﻿@model TableCrud.Models.Employee
+@{
+    ViewBag.Title = "Home Page";
+}
+
+
+@using (Html.BeginForm("Index", "Home", new { id = Model.RowKey }, FormMethod.Post,new { enctype = "multipart/form-data" }))
+{
+    <fieldset>
+        <legend><b>Employee Registration Form</b></legend>
+        <ol>
+            <li>
+                <label>First Name:</label>&nbsp;
+                <input type="text" name="FirstName" required="required" value="@Model.FirstName" required placeholder="First Name" />
+            </li>
+            <li>
+                <label>Last Name:</label>&nbsp;&nbsp;
+                <input type="text" name="LastName" required="required" value="@Model.LastName" required  placeholder="Last Name"/>
+            </li>
+            <li>
+                <label>Email:</label>&nbsp;&nbsp;
+                <input type="email" name="Email" value="@Model.Email" style="margin-left:3%" required  placeholder="Email"/>
+            </li>
+            <li >
+                <label>Mobile No:</label>&nbsp;&nbsp;&nbsp;
+                <input type="text" name="Mobile" pattern="[0-9]{10,14}" required placeholder="Mobile Number" value="@Model.Mobile">
+            </li>
+                 <li>
+                     <label>Address:</label>&nbsp;&nbsp;&nbsp;&nbsp;
+                     <textarea name="Address" rows="5" value="@Model.Address" placeholder="Address" style="vertical-align:middle" required>@Model.Address</textarea>
+                 </li>
+            <li>
+                <label style="margin-right:15px;">Select Resume </label>
+                <input type="file" name="Path" value="@Model.Path" required="required" />
+
+            </li>
+        </ol>
+        <input type="submit" value="Submit" />
+    </fieldset>
+}  
+<br />
+<div>
+    @Html.ActionLink("Back to List", "Get")
+</div>
