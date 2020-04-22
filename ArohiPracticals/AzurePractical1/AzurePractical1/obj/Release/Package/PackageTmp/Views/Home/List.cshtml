@@ -1,0 +1,68 @@
+﻿@model IEnumerable<AzurePractical1.Models.Employee>
+
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+          
+            @Html.DisplayName("First Name")
+        </th>
+        <th>
+            
+            @Html.DisplayName("Last Name")
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mobile)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayName("Resume")
+        </th>
+        
+        <th>@Html.DisplayName("Download Resume")</th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+
+   
+    <td>
+        @Html.DisplayFor(modelItem => item.PartitionKey)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.RowKey)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Email)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Mobile)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Address)
+    </td>
+    <td>
+        <a href="/Home/Download?name=@item.FileUpload.Split('/').Last()">@HttpUtility.UrlDecode(item.FileUpload.Split('/').Last().Split('.').First())</a>
+
+    </td>
+    <td>
+
+        <a href="/Home/Download?name=@item.FileUpload.Split('/').Last()">Download</a>
+    </td>
+</tr>
+}
+
+</table>
