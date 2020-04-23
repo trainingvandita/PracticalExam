@@ -1,0 +1,15 @@
+D:\Azure\AzureAss\TextAnalytics\TextAnalyticss\bin\Debug\netcoreapp3.0\TextAnalyticss.exe
+D:\Azure\AzureAss\TextAnalytics\TextAnalyticss\obj\Debug\netcoreapp3.0\TextAnalyticss.csprojAssemblyReference.cache
+D:\Azure\AzureAss\TextAnalytics\TextAnalyticss\obj\Debug\netcoreapp3.0\TextAnalyticss.AssemblyInfoInputs.cache
+D:\Azure\AzureAss\TextAnalytics\TextAnalyticss\obj\Debug\netcoreapp3.0\TextAnalyticss.AssemblyInfo.cs
+D:\Azure\AzureAss\TextAnalytics\TextAnalyticss\bin\Debug\netcoreapp3.0\TextAnalyticss.deps.json
+D:\Azure\AzureAss\TextAnalytics\TextAnalyticss\bin\Debug\netcoreapp3.0\TextAnalyticss.runtimeconfig.json
+D:\Azure\AzureAss\TextAnalytics\TextAnalyticss\bin\Debug\netcoreapp3.0\TextAnalyticss.runtimeconfig.dev.json
+D:\Azure\AzureAss\TextAnalytics\TextAnalyticss\bin\Debug\netcoreapp3.0\TextAnalyticss.dll
+D:\Azure\AzureAss\TextAnalytics\TextAnalyticss\bin\Debug\netcoreapp3.0\TextAnalyticss.pdb
+D:\Azure\AzureAss\TextAnalytics\TextAnalyticss\bin\Debug\netcoreapp3.0\Azure.AI.TextAnalytics.dll
+D:\Azure\AzureAss\TextAnalytics\TextAnalyticss\bin\Debug\netcoreapp3.0\Azure.Core.dll
+D:\Azure\AzureAss\TextAnalytics\TextAnalyticss\bin\Debug\netcoreapp3.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Azure\AzureAss\TextAnalytics\TextAnalyticss\obj\Debug\netcoreapp3.0\TextAnalyticss.csproj.CopyComplete
+D:\Azure\AzureAss\TextAnalytics\TextAnalyticss\obj\Debug\netcoreapp3.0\TextAnalyticss.dll
+D:\Azure\AzureAss\TextAnalytics\TextAnalyticss\obj\Debug\netcoreapp3.0\TextAnalyticss.pdb

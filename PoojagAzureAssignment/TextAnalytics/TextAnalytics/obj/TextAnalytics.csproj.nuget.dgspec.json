@@ -1,0 +1,57 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Azure\\AzureAss\\TextAnalytics\\TextAnalytics\\TextAnalytics.csproj": {}
+  },
+  "projects": {
+    "D:\\Azure\\AzureAss\\TextAnalytics\\TextAnalytics\\TextAnalytics.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Azure\\AzureAss\\TextAnalytics\\TextAnalytics\\TextAnalytics.csproj",
+        "projectName": "TextAnalytics",
+        "projectPath": "D:\\Azure\\AzureAss\\TextAnalytics\\TextAnalytics\\TextAnalytics.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "D:\\Azure\\AzureAss\\TextAnalytics\\TextAnalytics\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Microsoft.Azure.CognitiveServices.Language.TextAnalytics": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

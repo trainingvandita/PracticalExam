@@ -1,0 +1,43 @@
+﻿
+@model List<PoojagWebapplication.Models.User>
+
+
+@{
+    ViewBag.Title = "Get";
+}
+
+<h2>Get</h2>>
+<table border="1">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Mobile</th>
+            <th>Address</th>
+            <th>File</th>
+            <th>Download File</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (PoojagWebapplication.Models.User UserObj in Model)
+        {
+        <tr>
+            <td>@UserObj.FirstName</td>
+            <td>@UserObj.LastName</td>
+            <td>@UserObj.Email</td>
+            <td>@UserObj.Mobile</td>
+            <td>@UserObj.Address</td>
+            <td>@UserObj.Resume</td>
+            <td>
+                <span>
+                    <a href="/Home/Download?name=@UserObj.Resume.Split('/').Last()">Download</a>
+                </span>
+            </td>
+
+        </tr>
+
+        }
+    </tbody>
+</table>
+

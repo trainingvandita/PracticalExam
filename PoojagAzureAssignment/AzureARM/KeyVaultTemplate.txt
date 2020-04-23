@@ -1,0 +1,82 @@
+{
+  "id": "/subscriptions/1b82bbe7-0876-41b3-9452-913e72c795db/resourceGroups/Training1/providers/Microsoft.KeyVault/vaults/poojagkeyvault",
+  "location": "eastus",
+  "name": "poojagkeyvault",
+  "properties": {
+    "accessPolicies": [
+      {
+        "applicationId": null,
+        "objectId": "fdc73749-8245-4140-b36b-96ec4ff68c38",
+        "permissions": {
+          "certificates": [
+            "get",
+            "list",
+            "delete",
+            "create",
+            "import",
+            "update",
+            "managecontacts",
+            "getissuers",
+            "listissuers",
+            "setissuers",
+            "deleteissuers",
+            "manageissuers",
+            "recover"
+          ],
+          "keys": [
+            "get",
+            "create",
+            "delete",
+            "list",
+            "update",
+            "import",
+            "backup",
+            "restore",
+            "recover"
+          ],
+          "secrets": [
+            "get",
+            "list",
+            "set",
+            "delete",
+            "backup",
+            "restore",
+            "recover"
+          ],
+          "storage": [
+            "get",
+            "list",
+            "delete",
+            "set",
+            "update",
+            "regeneratekey",
+            "setsas",
+            "listsas",
+            "getsas",
+            "deletesas"
+          ]
+        },
+        "tenantId": "2667bad8-7faa-4726-9d60-25bfb213006e"
+      }
+    ],
+    "createMode": null,
+    "enablePurgeProtection": null,
+    "enableRbacAuthorization": false,
+    "enableSoftDelete": true,
+    "enabledForDeployment": false,
+    "enabledForDiskEncryption": null,
+    "enabledForTemplateDeployment": null,
+    "networkAcls": null,
+    "privateEndpointConnections": null,
+    "provisioningState": "Succeeded",
+    "sku": {
+      "name": "standard"
+    },
+    "softDeleteRetentionInDays": 90,
+    "tenantId": "2667bad8-7faa-4726-9d60-25bfb213006e",
+    "vaultUri": "https://poojagkeyvault.vault.azure.net/secrets/Connetionstring/607972307761425c953e5ae5a35a60f3"
+  },
+  "resourceGroup": "Training1",
+  "tags": {},
+  "type": "Microsoft.KeyVault/vaults"
+}
