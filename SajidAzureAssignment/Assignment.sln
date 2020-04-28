@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement", "EmployeeManagement\EmployeeManagement.csproj", "{A29C5A8C-2A32-4D3A-AF67-6977B8A17668}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AzureFunctions", "AzureFunctions\AzureFunctions.csproj", "{E69FAD01-F1BD-4605-BE31-5811FE3CE1C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A29C5A8C-2A32-4D3A-AF67-6977B8A17668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A29C5A8C-2A32-4D3A-AF67-6977B8A17668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A29C5A8C-2A32-4D3A-AF67-6977B8A17668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A29C5A8C-2A32-4D3A-AF67-6977B8A17668}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E69FAD01-F1BD-4605-BE31-5811FE3CE1C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E69FAD01-F1BD-4605-BE31-5811FE3CE1C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E69FAD01-F1BD-4605-BE31-5811FE3CE1C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E69FAD01-F1BD-4605-BE31-5811FE3CE1C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {12305B4C-9CE1-46D0-860B-B52FA8812064}
+	EndGlobalSection
+EndGlobal
